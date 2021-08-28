@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body
+{
+    font-family: 'Pacifico', cursive;
+    margin:0px;
+    
+}
+#output
+{
+    /* box-sizing: border-box; */
+    width: 61%;
+    margin-left: 12%;
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow: auto;
+    border: 1px solid blue;
+    border-radius:5px;
+    
+}
+nav
+{
+    background-color: yellow;
+    height:100px;
+    text-align: center;
+    padding:15px 0px;
+    color:blue;
+    margin-bottom: 5%;
+}
+.container
+{
+    text-align: center;
+}
+#text
+{
+    width:60%;
+    height:40px;
+    border: 2px solid yellow;
+    border-radius:5px;
+    margin-bottom:5%;
+}
+#translate-btn
+{
+    width:15%;
+    height:30px;
+    border: 2px solid blue;
+    border-radius:5px;
+    background-color: yellow;
+    color:blue;
+    font-family: 'Pacifico', cursive;
+}
+#img-minion
+{
+    height:100px;
+    width: 200px;
+}
+
+footer
+{
+    background-image: url("Images/minions.jpg");
+    height:50px;
+    bottom: 0;
+    margin-top: 11%;
+}
