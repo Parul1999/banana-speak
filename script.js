@@ -1,27 +1,32 @@
-var input = document.querySelector('#text');
-var translateBtn = document.querySelector('#translate-btn');
-var output = document.querySelector('#output');
+const input = document.querySelector("#input-text");
+const translateButton = document.querySelector("#translate-btn");
+const output = document.querySelector("#output");
 
 function translate()
 {
-if(input.value !="")
-{
-var url ="https://api.funtranslations.com/translate/minion.json?text="+(input.value);
+    if(input.value !="")
+    {
+       var url= "https://api.funtranslations.com/translate/minion.json?text="+ input.value;
 
-fetch(url)
-.then(response=>response.json())
-.then(finalRes=>output.innerText=finalRes.contents.translated)
-.catch(error=>(
-output.innerText="Error Occured !! Try Again after some time.",
-output.style.color="red" 
-))
-}
-else
-{
-    output.innerText="You cannot translate if you don't have anything to type !!"
-    output.style.color="darkred"
-}
+       fetch(url)
+       .then(res=>res.json())
+       .then(finalRes=>(
+        output.innerText= finalRes.contents.translated,
+        output.style="black")
+        )
+        .catch( err =>(
+            output.style.color="red",
+          output.innerText="Error Occurred !!"
+        )
+        )
+
+    }
+    else
+    {
+        output.innerText = "Please Enter Something , to Translate !!";
+        output.style.color="Red"
+    }
 
 }
 
-translateBtn.addEventListener('click',translate)
+translateButton.addEventListener("click",translate)

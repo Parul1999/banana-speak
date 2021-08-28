@@ -1,64 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
-body
-{
-    font-family: 'Pacifico', cursive;
-    margin:0px;
-    
+* {
+    box-sizing: border-box;
 }
-#output
-{
-    /* box-sizing: border-box; */
-    width: 61%;
-    margin-left: 12%;
+
+:root {
+    --primary: #F2C94C;
+    --black: #333333;
+    --width-break:600px
+}
+
+body {
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    color: #333333;
+}
+
+nav {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
+}
+
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+}
+
+button {
+    background-color: var(--primary);
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+}
+
+
+#output{
+    box-sizing: border-box;
+    width: 100%;
     min-height: 10vh;
     max-height: 20vh;
-    overflow: auto;
-    border: 1px solid blue;
-    border-radius:5px;
-    
-}
-nav
-{
-    background-color: yellow;
-    height:100px;
-    text-align: center;
-    padding:15px 0px;
-    color:blue;
-    margin-bottom: 5%;
-}
-.container
-{
-    text-align: center;
-}
-#text
-{
-    width:60%;
-    height:40px;
-    border: 2px solid yellow;
-    border-radius:5px;
-    margin-bottom:5%;
-}
-#translate-btn
-{
-    width:15%;
-    height:30px;
-    border: 2px solid blue;
-    border-radius:5px;
-    background-color: yellow;
-    color:blue;
-    font-family: 'Pacifico', cursive;
-}
-#img-minion
-{
-    height:100px;
-    width: 200px;
+    overflow:auto;
+    border: 1px solid var(--black);
 }
 
-footer
-{
-    background-image: url("Images/minions.jpg");
-    height:50px;
+footer {
+    position: fixed;
     bottom: 0;
-    margin-top: 11%;
+    width: 100%;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+footer p {
+    max-width: var(--width-break);
+    margin: auto;
+}
+
+footer div
+{
+    font-size: x-large;
+}
+nav div
+{
+    font-size: 2rem;
+    padding: 1rem;
 }
