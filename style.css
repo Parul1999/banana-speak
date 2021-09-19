@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary: #F2C94C;
+    --primary: goldenrod;
     --black: #333333;
     --width-break:600px
 }
@@ -63,6 +63,7 @@ footer {
     width: 100%;
     background-color: var(--primary);
     text-align: center;
+    padding:3rem;
 }
 
 footer p {
